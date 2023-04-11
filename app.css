@@ -1,0 +1,246 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Slab', serif;
+    font-style: normal;
+}
+
+.topbar {
+    width: 100%;
+    height: 90px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .logo__wrapper, 
+.btns {
+    background-color: olive;
+} */
+
+.topbar .logo__wrapper {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    color: whitesmoke;
+    justify-content: flex-end;
+    margin-left: 20px;
+}
+
+.logo__wrapper .logo {
+    width: 200px;
+    align-self: center;
+}
+.logo__wrapper .helpcenter {
+    height: 20px;
+    align-self: center;
+    font-size: 30px;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 2px solid whitesmoke;  
+}
+
+.btns {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btns .submit-btn {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    padding: 16px 24px;
+    background-color: #bbb;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.btns .login-btn {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    padding: 16px 24px;
+    color: whitesmoke;
+    background-color: #4C5FD5;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: -50px;
+}
+
+.btns .submit-btn:hover {
+    border: 2px solid whitesmoke;
+}
+
+.btns .login-btn:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+
+.hero-unit {
+    width: 100%;
+    height: 400px;
+    background-color: #dadbf1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-unit h1 {
+    font-size: 4.5rem;
+    margin-bottom: 30px;
+}
+.hero-unit .search-query {
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+
+.search-query input {
+    width: 100%;
+    border: none;
+    color: black;
+    padding: 1rem 1rem;
+    box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    background-image: none;
+    font-size: 1.5rem;
+    border-radius: 4px;
+}   
+
+.search-query i {
+    font-size: 2rem;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.search-query i:hover {
+    color:rgb(3, 67, 146);
+}
+
+main {
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main__content {
+    width: 80%;
+    height: 80%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main__content .card {
+    width: 50%;
+    /* border: 2px solid maroon; */
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main__content .card .card-img {
+    width: 25%;
+    height: 100%;
+    /* background-color: tomato; */
+    align-self: flex-end;
+}
+
+.card .card-img img {
+    width: 100px;
+    height: 100px;
+    margin: 50px 30px 30px;
+}
+
+.card .card-content {
+    height: 100%;
+    width: 75%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+/* .card .card-content * {
+    margin: 10px 0;
+}     */
+
+.card .card-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 45px 20px 15px;
+}
+
+.card .card-content p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.card .card-content a {
+    font-size: 1.4rem;
+    color: #101073;
+    text-decoration: none;
+    width: 150px;
+    margin: 20px;
+    position: relative;
+}
+
+.card .card-content a > i {
+    vertical-align: middle;
+}
+
+.card .card-content a:hover::before {
+    content: "";
+    width: 150px;
+    height: 1px;
+    background-color: #101073;
+    position: absolute;
+    bottom: -3px;
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(to right, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: whitesmoke;  
+    font-family: 'Space Mono', monospace;
+    vertical-align: middle;
+    font-size: 1.3rem;
+}
+
+footer p span {
+    display: inline-block;  
+    font-size: 2rem;
+    position: relative;
+    top: 12px;
+}
